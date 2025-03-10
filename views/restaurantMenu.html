@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <nav>
+        <a href="/">Home |</a>
+        <a href="/restaurantMenu"> Restaurant Menu</a>
+    </nav>
+
+    <div id="restaurantDiv">
+
+        <h1>Big Bob's Food Pit</h1>
+        <h4>Please select what items you would like to order from the menu:</h4>
+        <p><input type="button" id="cbButton" value="Cheeseburger"></p>
+        <p><input type="button" id="caButton" value="Chicken Alfredo"></p>
+        <p><input type="button" id="pcButton" value="Pork Chop"></p>
+        <p><input type="button" id="wButton" value="Water"></p>
+        <p><input type="button" id="stButton" value="Sweet Tea"></p>
+        <p><input type="button" id="lButton" value="Lemonade"></p>
+
+        <p><input type="button" id="receiptButton" value="Create Receipt"><input type="button" id="downloadButton" value="Download Receipt" hidden></p>
+
+        <section>
+            <iframe id="receiptPreview" src="" frameborder="0" width="1200" height="450px"></iframe>
+        </section>
+
+    </div>
+
+    <script src="js/receipt.js" type="module"></script>
+</body>
+</html>
