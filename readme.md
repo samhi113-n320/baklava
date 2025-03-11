@@ -6,7 +6,7 @@ Brief description of your what your project is about and why you chose that topi
 
 ### Live Link
 
-[Blog Page](https://{username}.github.io/{reponame}/homework-2)  
+[Hosted on Render](https://baklava-n320.onrender.com/)
 
 ### Key Takeaways
 
@@ -24,14 +24,13 @@ Brief description of your what your project is about and why you chose that topi
 - Collaboration & Teamwork
   - Working together :D
 
+### Design Choices
 
-### Design Choices 
-
-List color palette used and rationale for top level layout decisions.
+Our color pallete consisted of #443311, #ffaa44, #ddaa77, and just a hint of css's standard lightgreen, #90ee90. These colors resemble the golden, flaky brilliance of baklava's bread with the hint of pistachio to top it off.
 
 ### Members & Responsibilities
 
-+ President - Austin Cohen
-+ Scrum Master - Allen Fudge
-+ Designer - Sam Higgins
-+ Analyst- Arissa Green
+- President - Austin Cohen
+- Scrum Master - Allen Fudge
+- Designer - Sam Higgins
+- Analyst- Arissa Green
