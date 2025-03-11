@@ -28,7 +28,7 @@ p {
 }
 
 nav {
-  background-color: #ffaa44;
+  background-color: #fa4;
   background-image: url(../assets/navBack.svg);
   background-repeat: repeat-x;
   background-size: contain;
@@ -99,14 +99,19 @@ nav ul {
 
 nav a {
   min-width: 10vw;
-  text-decoration: none;
+  text-decoration: underline transparent;
   font-size: 24;
   color: #fff;
 }
 
 nav a:not(.logo):hover {
-  background-color: #ffaa4480;
+  background-color: #44331180;
   font-weight: bold;
+  text-decoration: underline lightgreen;
+}
+
+#hero {
+  width: 10;
 }
 
 #restaurantDiv {
