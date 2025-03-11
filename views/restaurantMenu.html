@@ -1,62 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Restaurant Menu</title>
     <link rel="stylesheet" href="css/styles.css" />
-</head>
-<body>
+    <link rel="stylesheet" href="css/samStyles.css" />
+  </head>
+  <body>
     <nav>
-        <a href="./" class="logo">
-          <svg
-            id="Layer_2"
-            xmlns="http://www.w3.org/2000/svg"
-            version="1.1"
-            viewBox="0 0 67.2 100"
-          >
-            <path
-              class="st0"
-              d="M50,33.3l15.6-20.8c3.9-5.2.2-12.5-6.2-12.5H0v33.3h50Z"
-            />
-            <path
-              class="st1"
-              d="M50,66.7H0v33.3h59.4c6.4,0,10.1-7.3,6.2-12.5l-15.6-20.8h0Z"
-            />
-            <path
-              class="st2"
-              d="M50,33.3H0v33.3h50l-3.1-4.2c-5.6-7.4-5.6-17.6,0-25l3.1-4.2h0Z"
-            />
-          </svg>
-          <h1>BAKLAVA</h1>
-        </div>
-        <ul>
-          <li><a href="./">Home</a></li>
-          <li><a href="./restaurantMenu">Restaurant Menu</a></li>
-          <li><a href="./ticket">Buy Tickets</a></li>
-          <li><a href="./certificate">Online Course</a></li>
-        </ul>
+      <a href="./" class="logo">
+        <svg
+          id="Layer_2"
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          viewBox="0 0 67.2 100"
+        >
+          <path
+            class="st0"
+            d="M50,33.3l15.6-20.8c3.9-5.2.2-12.5-6.2-12.5H0v33.3h50Z"
+          />
+          <path
+            class="st1"
+            d="M50,66.7H0v33.3h59.4c6.4,0,10.1-7.3,6.2-12.5l-15.6-20.8h0Z"
+          />
+          <path
+            class="st2"
+            d="M50,33.3H0v33.3h50l-3.1-4.2c-5.6-7.4-5.6-17.6,0-25l3.1-4.2h0Z"
+          />
+        </svg>
+        <h1>BAKLAVA</h1>
+      </a>
+      <ul>
+        <li><a href="./">Home</a></li>
+        <li><a href="./restaurantMenu">Restaurant Menu</a></li>
+        <li><a href="./ticket">Buy Tickets</a></li>
+        <li><a href="./certificate">Certificate</a></li>
+        <li><a href="./invoice">Invoice</a></li>
+      </ul>
     </nav>
 
     <div id="restaurantDiv">
+      <h2 class="title">Big Bob's Food Pit</h2>
+      <h4>Please select what items you would like to order from the menu:</h4>
+      <p><input type="button" id="cbButton" value="Cheeseburger" /></p>
+      <p><input type="button" id="caButton" value="Chicken Alfredo" /></p>
+      <p><input type="button" id="pcButton" value="Pork Chop" /></p>
+      <p><input type="button" id="wButton" value="Water" /></p>
+      <p><input type="button" id="stButton" value="Sweet Tea" /></p>
+      <p><input type="button" id="lButton" value="Lemonade" /></p>
 
-        <h1>Big Bob's Food Pit</h1>
-        <h4>Please select what items you would like to order from the menu:</h4>
-        <p><input type="button" id="cbButton" value="Cheeseburger"></p>
-        <p><input type="button" id="caButton" value="Chicken Alfredo"></p>
-        <p><input type="button" id="pcButton" value="Pork Chop"></p>
-        <p><input type="button" id="wButton" value="Water"></p>
-        <p><input type="button" id="stButton" value="Sweet Tea"></p>
-        <p><input type="button" id="lButton" value="Lemonade"></p>
+      <p>
+        <input type="button" id="receiptButton" value="Create Receipt" /><input
+          type="button"
+          id="downloadButton"
+          value="Download Receipt"
+          hidden
+        />
+      </p>
 
-        <p><input type="button" id="receiptButton" value="Create Receipt"><input type="button" id="downloadButton" value="Download Receipt" hidden></p>
-
-        <section>
-            <iframe id="receiptPreview" src="" frameborder="0" width="1200" height="450px"></iframe>
-        </section>
-
+      <section>
+        <iframe
+          id="receiptPreview"
+          src=""
+          frameborder="0"
+          width="1200"
+          height="450px"
+        ></iframe>
+      </section>
     </div>
 
     <script src="js/receipt.js" type="module"></script>
-</body>
+  </body>
 </html>

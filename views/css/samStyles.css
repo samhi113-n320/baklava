@@ -10,7 +10,8 @@ html {
   overflow-x: hidden;
 }
 
-h2 {
+h2.title {
+  margin: 0;
   width: 100vw;
   min-height: 15vh;
   padding: 2.5vh 10vw;
@@ -23,8 +24,8 @@ h2 {
   font-size: calc(2vh + 1vw);
 }
 
-input,
-input:focus-visible {
+input#nameInput,
+input#nameInput:focus-visible {
   width: 80vw;
   margin: 5vh 10vw;
   padding: 0 50px;
