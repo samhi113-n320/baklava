@@ -111,7 +111,7 @@ nav a:not(.logo):hover {
 }
 
 #hero {
-  width: 10;
+  width: 100vw;
 }
 
 #restaurantDiv {
