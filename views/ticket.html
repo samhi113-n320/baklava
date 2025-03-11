@@ -41,6 +41,8 @@
 
     <h2 style="margin: 0">Ticket Purchase</h2>
 
+    <input type="text" name="Name" id="nameInput" placeholder="Type your first & last name...">
+
     <section class="event">
       <img src="./assets/concert.jpeg" alt="View of a concert." />
       <div class="sideText">
@@ -53,7 +55,7 @@
           before event fees. So prepare your bank account, this one's gonna
           hurt.
         </p>
-        <button id="concert">Concert Ticket</button>
+        <a href="#pdf-preview" id="concert" class="button">Concert Ticket</a>
       </div>
     </section>
 
@@ -70,10 +72,12 @@
           all. Pay up for one of the worst experiences you'll ever have in a
           stadium.
         </p>
-        <button id="sports">Sports Ticket</button>
+        <a href="#pdf-preview" id="sports" class="button">Sports Ticket</a>
       </div>
     </section>
 
-    <script src="./js/samApp.js"></script>
+    <iframe src="" frameborder="0" id="pdf-preview"></iframe>
+
+    <script src="./js/samApp.js" type="module"></script>
   </body>
 </html>

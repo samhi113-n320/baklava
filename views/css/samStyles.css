@@ -20,6 +20,22 @@ h2 {
 
   background-color: #431;
   color: #fff;
+  font-size: calc(2vh + 1vw);
+}
+
+input,
+input:focus-visible {
+  width: 80vw;
+  margin: 5vh 10vw;
+  padding: 0 50px;
+
+  color: #431;
+  font-size: 80px;
+  font-weight: bold;
+
+  border-radius: 50px;
+  border: none;
+  outline: none;
 }
 
 .event {
@@ -56,7 +72,7 @@ h2 {
   margin-top: 0;
 }
 
-.event button {
+.event .button {
   background-color: #431;
   color: #fff;
   font-size: calc(1vw + 1vh);
@@ -71,7 +87,15 @@ h2 {
   border-radius: calc(0.33vw + 0.5vh);
 }
 
-.event button:hover {
+.event .button:hover {
   cursor: pointer;
   border-radius: calc(0.5vw + 1vh);
+  text-decoration: underline lightgreen;
+}
+
+iframe {
+  width: 80vw;
+  height: 80vh;
+
+  margin: 15vh 10vw;
 }
