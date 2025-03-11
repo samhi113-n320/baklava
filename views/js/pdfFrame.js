@@ -1,6 +1,6 @@
 import { jsPDF } from "https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.0.0/jspdf.es.js";
 
-class GeneratePDF {
+export default class GeneratePDF {
     pdfDoc;
 
     position = {
@@ -15,7 +15,7 @@ class GeneratePDF {
 
 
     constructor() {
-        this.pdfDoc = new jsPDF("l");
+        this.pdfDoc = new jsPDF();
     };
 
     downloadPdf() {
@@ -26,21 +26,30 @@ class GeneratePDF {
         return this.pdfDoc.output("bloburl");
     };
 
-    addHeader(text) {
+    addHeader(text, textX = "default", textY = "default") {
         this.pdfDoc.setFont("Helvetica", "bold")
         this.pdfDoc.setFontSize(24);
-        this.pdfDoc.text(text, this.position.x, this.position.y);
-        this.position.y += 11 / 1.75;
+
+        if (textX == "default" && textY == "default") {
+            this.pdfDoc.text(text, this.position.x, this.position.y);
+            this.position.y += 11 / 1.75;
+        } else {
+            this.pdfDoc.text(text, textX, textY)
+            this.position.x = textX
+            this.position.y = textY + 5.5
+        }
         this.pdfDoc.setFontSize(11);
     }
 
     addText(text, textX = "default", textY = "default") {
         this.pdfDoc.setFont("Helvetica", "normal")
         if (textX == "default" && textY == "default") {
-            this.pdfDoc.text(text, this.position.x, this.position.y, { align:"center" })
+            this.pdfDoc.text(text, this.position.x, this.position.y)
             this.position.y += 5.5;
         } else {
-            this.pdfDoc.text(text, textX, textY, { align:"center" })
+            this.pdfDoc.text(text, textX, textY)
+            this.position.x = textX
+            this.position.y = textY + 5.5
         }
     }
 
