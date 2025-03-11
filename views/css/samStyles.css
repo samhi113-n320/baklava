@@ -10,8 +10,8 @@ html {
   overflow-x: hidden;
 }
 
-h1 {
-  width: 80vw;
+h2 {
+  width: 100vw;
   min-height: 15vh;
   padding: 2.5vh 10vw;
 
@@ -28,7 +28,7 @@ h1 {
   margin: 5vh 10vw;
 
   border-radius: 5vw;
-  background-color: #ca4;
+  background-color: #fa4;
 
   display: flex;
   align-items: center;
@@ -52,7 +52,7 @@ h1 {
   margin-right: 5vw;
 }
 
-.event h2 {
+.event h3 {
   margin-top: 0;
 }
 
@@ -72,5 +72,6 @@ h1 {
 }
 
 .event button:hover {
-  border: calc(0.5vw + 1vh);
+  cursor: pointer;
+  border-radius: calc(0.5vw + 1vh);
 }
