@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Course</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/cert.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="./" class="logo">
+        <svg
+          id="Layer_2"
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          viewBox="0 0 67.2 100"
+        >
+          <path
+            class="st0"
+            d="M50,33.3l15.6-20.8c3.9-5.2.2-12.5-6.2-12.5H0v33.3h50Z"
+          />
+          <path
+            class="st1"
+            d="M50,66.7H0v33.3h59.4c6.4,0,10.1-7.3,6.2-12.5l-15.6-20.8h0Z"
+          />
+          <path
+            class="st2"
+            d="M50,33.3H0v33.3h50l-3.1-4.2c-5.6-7.4-5.6-17.6,0-25l3.1-4.2h0Z"
+          />
+        </svg>
+        <h1>BAKLAVA</h1>
+      </a>
+      <ul>
+        <li><a href="./">Home</a></li>
+        <li><a href="./restaurantMenu">Restaurant Menu</a></li>
+        <li><a href="./ticket">Buy Tickets</a></li>
+        <li><a href="./certificate">Online Course</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section>
+        <h1>Online Course Certificate</h1>
+      </section>
+      <form id="quiz-form">
+        <label for="name">Enter Your Name:</label>
+        <input type="text" id="name" required />
+
+        <h2>Quiz</h2>
+        <p>1. What does ** do in Python</p>
+        <input type="radio" name="q1" value="wrong" /> Multiplication<br />
+        <input type="radio" name="q1" value="correct" /> Exponentiation<br />
+        <input type="radio" name="q1" value="wrong" /> Percentage<br />
+
+        <p>2. What is the best girl scout cookie?</p>
+        <input type="radio" name="q2" value="wrong" /> Trefoils<br />
+        <input type="radio" name="q2" value="correct" /> Samoas<br />
+        <input type="radio" name="q2" value="wrong" /> Tagalongs<br />
+
+        <button type="submit">Generate Certificate</button>
+      </form>
+
+      <section>
+        <iframe id="pdf-preview" src="" frameborder="0"></iframe>
+        <button id="download-btn" disabled>Download Certificate</button>
+      </section>
+    </main>
+    <script src="js/cert.js" type="module"></script>
+  </body>
+</html>
