@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ticket - Baklava</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/samStyles.css" />
+  </head>
+  <body>
+    <nav>
+        <a href="./" class="logo">
+          <svg
+            id="Layer_2"
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            viewBox="0 0 67.2 100"
+          >
+            <path
+              class="st0"
+              d="M50,33.3l15.6-20.8c3.9-5.2.2-12.5-6.2-12.5H0v33.3h50Z"
+            />
+            <path
+              class="st1"
+              d="M50,66.7H0v33.3h59.4c6.4,0,10.1-7.3,6.2-12.5l-15.6-20.8h0Z"
+            />
+            <path
+              class="st2"
+              d="M50,33.3H0v33.3h50l-3.1-4.2c-5.6-7.4-5.6-17.6,0-25l3.1-4.2h0Z"
+            />
+          </svg>
+          <h1>BAKLAVA</h1>
+        </div>
+        <ul>
+          <li><a href="./">Home</a></li>
+          <li><a href="./restaurantMenu">Restaurant Menu</a></li>
+          <li><a href="./ticket">Buy Tickets</a></li>
+        </ul>
+    </nav>
+
+    <h2 style="margin: 0">Ticket Purchase</h2>
+
+    <input type="text" name="Name" id="nameInput" placeholder="Type your first & last name...">
+
+    <section class="event">
+      <img src="./assets/concert.jpeg" alt="View of a concert." />
+      <div class="sideText">
+        <h3>Concert</h3>
+        <p>
+          This is the concert where the music is played by the people and bands
+          you love, at a place that, let's be honest, kinda wasn't meant for an
+          event like this, or maybe it is and then your experience will suck.
+          Either way, you're going to have a 6/10 time and pay 11/10 prices,
+          before event fees. So prepare your bank account, this one's gonna
+          hurt.
+        </p>
+        <a href="#pdf-preview" id="concert" class="button">Concert Ticket</a>
+      </div>
+    </section>
+
+    <section class="event">
+      <img src="./assets/basketball.jpeg" alt="View of a basketball game." />
+      <div class="sideText">
+        <h3>Sports Ball Game</h3>
+        <p>
+          This is the game you've been waiting for! Or not. Ok. It's not. But
+          too bad! That team you really wanna see, but for personal reasons?
+          Womp womp, it's priced like a championship game. Sucks to suck. And
+          this game? You aren't looking to see this team, your team will
+          probably lose, and now you're stuck watching it in-person or not at
+          all. Pay up for one of the worst experiences you'll ever have in a
+          stadium.
+        </p>
+        <a href="#pdf-preview" id="sports" class="button">Sports Ticket</a>
+      </div>
+    </section>
+
+    <iframe src="" frameborder="0" id="pdf-preview"></iframe>
+
+    <script src="./js/samApp.js" type="module"></script>
+  </body>
+</html>
