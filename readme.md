@@ -18,7 +18,7 @@ List color palette used and rationale for top level layout decisions.
 
 ### Members & Responsibilities
 
-President - Austin Cohen
-Scrum Master - Allen Fudge
-Designer - Sam Higgins
-Analyst- Arissa Green
++ President - Austin Cohen
++ Scrum Master - Allen Fudge
++ Designer - Sam Higgins
++ Analyst- Arissa Green
